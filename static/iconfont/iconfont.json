@@ -1,0 +1,114 @@
+{
+  "id": "1461055",
+  "name": "meitai_education",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "410427",
+      "name": "操作",
+      "font_class": "caozuo",
+      "unicode": "e649",
+      "unicode_decimal": 58953
+    },
+    {
+      "icon_id": "414851",
+      "name": "商品管理",
+      "font_class": "shangpinguanli",
+      "unicode": "e631",
+      "unicode_decimal": 58929
+    },
+    {
+      "icon_id": "1440391",
+      "name": "系统设置",
+      "font_class": "xitongshezhi",
+      "unicode": "e611",
+      "unicode_decimal": 58897
+    },
+    {
+      "icon_id": "3851393",
+      "name": "账号",
+      "font_class": "zhanghao",
+      "unicode": "e66c",
+      "unicode_decimal": 58988
+    },
+    {
+      "icon_id": "3874031",
+      "name": "剪刀",
+      "font_class": "tubiaoCSban-",
+      "unicode": "e632",
+      "unicode_decimal": 58930
+    },
+    {
+      "icon_id": "4143137",
+      "name": "教务管理",
+      "font_class": "jiaowuguanli",
+      "unicode": "e68d",
+      "unicode_decimal": 59021
+    },
+    {
+      "icon_id": "4676600",
+      "name": "管理中心",
+      "font_class": "guanlizhongxin",
+      "unicode": "e70e",
+      "unicode_decimal": 59150
+    },
+    {
+      "icon_id": "4685719",
+      "name": "密码",
+      "font_class": "Group-",
+      "unicode": "e690",
+      "unicode_decimal": 59024
+    },
+    {
+      "icon_id": "5872015",
+      "name": "财务管理",
+      "font_class": "caiwuguanli",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
+      "icon_id": "7122018",
+      "name": "提醒",
+      "font_class": "tixing1",
+      "unicode": "e762",
+      "unicode_decimal": 59234
+    },
+    {
+      "icon_id": "7171139",
+      "name": "固定资产",
+      "font_class": "gudingzichan-normal",
+      "unicode": "e624",
+      "unicode_decimal": 58916
+    },
+    {
+      "icon_id": "7171180",
+      "name": "人事信息管理",
+      "font_class": "HRrenshirenshiguanli",
+      "unicode": "e62c",
+      "unicode_decimal": 58924
+    },
+    {
+      "icon_id": "7499628",
+      "name": "营销管理",
+      "font_class": "yingxiaoguanli",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
+      "icon_id": "8765137",
+      "name": "提醒",
+      "font_class": "tixing",
+      "unicode": "e626",
+      "unicode_decimal": 58918
+    },
+    {
+      "icon_id": "10156388",
+      "name": "转发",
+      "font_class": "zhuanfa",
+      "unicode": "e653",
+      "unicode_decimal": 58963
+    }
+  ]
+}
