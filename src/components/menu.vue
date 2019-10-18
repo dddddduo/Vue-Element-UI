@@ -9,6 +9,7 @@
         <template slot="title">
           <span>{{son.menuName}}</span>
         </template>
+        <Menu :navlist="son.children" v-if="son1.menuType === 'list'" v-for="(son1, index) in son.children" :key="index"></Menu>
         <el-menu-item v-for="(son1, index) in son.children" :key="index" @click.native="goto(son1)" v-if="son1.menuType === 'page'" :index="son1.url">
           <span>{{son1.menuName}}</span>
         </el-menu-item>
@@ -114,8 +115,16 @@ export default {
   ul {
     li {
       .el-submenu__title {
-        padding-left: 78px !important;
+        padding-left: 84px !important;
         font-size: 15px;
+      }
+      ul {
+        li {
+          .el-submenu__title {
+            padding-left: 50px !important;
+            font-size: 15px;
+          }
+        }
       }
     }
   }

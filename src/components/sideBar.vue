@@ -38,18 +38,25 @@ export default {
               code: "home-1",
               children: [
                 {
-                  index: "home_one",
-                  url: "/home_one",
-                  code: "home-1.home_one",
-                  menuName: "首页1-1",
-                  menuType: "page"
-                },
-                {
-                  index: "home_one1",
-                  url: "/home_one1",
-                  code: "home-1.home_one1",
-                  menuName: "首页1-2",
-                  menuType: "page"
+                  menuName: '首页1-1',
+                  menuType: "list",
+                  code: "home-1-1",
+                  children: [
+                    {
+                      index: "home_one",
+                      url: "/home_one",
+                      code: "home-1-1.home_one",
+                      menuName: "首页1-1-1",
+                      menuType: "page"
+                    },
+                    {
+                      index: "home_one1",
+                      url: "/home_one1",
+                      code: "home-1-1.home_one1",
+                      menuName: "首页1-1-2",
+                      menuType: "page"
+                    }
+                  ]
                 }
               ]
             },{
