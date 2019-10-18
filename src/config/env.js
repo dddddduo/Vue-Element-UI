@@ -1,3 +1,3 @@
-let baseUrl = 'https://www.baidu.com'
+let baseUrl = 'https://www.ninestarscf.com'
 
 export { baseUrl }

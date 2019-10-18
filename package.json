@@ -11,6 +11,7 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "ele-calendar": "^1.2.0",
     "element-ui": "^2.12.0",
     "nprogress": "^0.2.0",
     "vue": "^2.5.2",

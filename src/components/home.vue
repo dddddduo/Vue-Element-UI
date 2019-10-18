@@ -19,7 +19,7 @@
   </div>
 </template>
 <script>
-// import { posts, gets } from '@/service'
+import { company, financingIndex } from "@/service";
 import sideBar from "./sideBar"
 export default {
   components: {
@@ -46,17 +46,18 @@ export default {
     const that = this
     // 获取路由的name
     that.titleName = that.$route.name
-    // 调用接口
-    // posts({
-    //   id: 1
-    // }).then(res => {
-    //   console.log(res)
-    // })
-    // gets({
-    //   type: 1
-    // }).then(res => {
-    //   console.log(res)
-    // })
+    // 测试接口
+    company().then(res => {
+      console.log(res)
+    })
+    // '?signed=' + '' + '&ns_type=' + 4 + '&detail_info=1'
+    financingIndex({
+      signed: 'True',
+      ns_type: 4,
+      detail_info: 1
+    }).then(res => {
+      console.log(res)
+    })
   },
   methods: {
   }
