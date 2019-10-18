@@ -30,6 +30,18 @@ const router = new Router({
             import('@/pages/home/home_two')
         },
         {
+          path: '/home_one1',
+          name: 'home_one1',
+          component: () =>
+            import('@/pages/home/home_one1')
+        },
+        {
+          path: '/home_two1',
+          name: 'home_two1',
+          component: () =>
+            import('@/pages/home/home_two1')
+        },
+        {
           path: '/list_one',
           name: 'list_one',
           component: () =>

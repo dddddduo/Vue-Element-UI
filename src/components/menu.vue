@@ -1,15 +1,22 @@
 <template>
   <div>
-    <el-submenu v-for="(item, index) in navlist" :key="index" v-if="item.menuType === 'list'" :index="item.code">
+    <el-submenu v-for="(item, index) in navlist" :key="index" :index="item.code">
       <template slot="title">
         <i :class="item.icon" class="iconfont"></i>
         <span>{{item.menuName}}</span>
       </template>
-      <Menu :navlist="item.children" v-if="item.children.length"></Menu>
+      <el-submenu v-for="(son, index) in item.children" :key="index" v-if="son.menuType === 'list'" :index="son.code">
+        <template slot="title">
+          <span>{{son.menuName}}</span>
+        </template>
+        <el-menu-item v-for="(son1, index) in son.children" :key="index" @click.native="goto(son1)" v-if="son1.menuType === 'page'" :index="son1.url">
+          <span>{{son1.menuName}}</span>
+        </el-menu-item>
+      </el-submenu>
+      <el-menu-item v-for="(son, index) in item.children" :key="index" @click.native="goto(son)" v-if="son.menuType === 'page'" :index="son.url">
+        <span>{{son.menuName}}</span>
+      </el-menu-item>
     </el-submenu>
-    <el-menu-item v-for="(item, index) in navlist" :key="index" @click.native="goto(item)" v-if="item.menuType === 'page'" :index="item.url">
-      <span>{{item.menuName}}</span>
-    </el-menu-item>
   </div>
 </template>
  
@@ -72,6 +79,14 @@ export default {
       }
     }
   }
+  ul {
+    li {
+      .el-submenu__title {
+        padding-left: 78px !important;
+        font-size: 15px;
+      }
+    }
+  }
 }
 .is-opened {
   .el-submenu__title {
@@ -94,6 +109,14 @@ export default {
     }
     .el-menu-item.is-active {
       color: #fff !important;
+    }
+  }
+  ul {
+    li {
+      .el-submenu__title {
+        padding-left: 78px !important;
+        font-size: 15px;
+      }
     }
   }
 }

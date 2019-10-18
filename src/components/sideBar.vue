@@ -33,18 +33,45 @@ export default {
           menuType: "list",
           children: [
             {
-              index: "home_one",
-              url: "/home_one",
-              code: "home.home_one",
-              menuName: "首页1",
-              menuType: "page"
-            },
-            {
-              index: "home_two",
-              url: "/home_two",
-              code: "home.home_two",
-              menuName: "首页2",
-              menuType: "page"
+              menuName: '首页1',
+              menuType: "list",
+              code: "home-1",
+              children: [
+                {
+                  index: "home_one",
+                  url: "/home_one",
+                  code: "home-1.home_one",
+                  menuName: "首页1-1",
+                  menuType: "page"
+                },
+                {
+                  index: "home_one1",
+                  url: "/home_one1",
+                  code: "home-1.home_one1",
+                  menuName: "首页1-2",
+                  menuType: "page"
+                }
+              ]
+            },{
+              menuName: '首页2',
+              menuType: "list",
+              code: "home-2",
+              children: [
+                {
+                  index: "home_two",
+                  url: "/home_two",
+                  code: "home-2.home_two",
+                  menuName: "首页2-1",
+                  menuType: "page"
+                },
+                {
+                  index: "home_two1",
+                  url: "/home_two1",
+                  code: "home-2.home_two1",
+                  menuName: "首页2-2",
+                  menuType: "page"
+                }
+              ]
             }
           ]
         },
